@@ -6,23 +6,33 @@ import (
 	"regexp"
 	"strconv"
 	"strings"
+
+	"gopkg.in/yaml.v3"
 )
 
 var MapConsts map[int]map[int]string
 var PokeConsts map[int]string
+var EvoMap map[string]map[string]int
+var RandomizerPools map[string][]string
 
 func init() {
-	m, err := readMapConstants()
+	var err error
+	MapConsts, err = readMapConstants()
 	if err != nil {
 		panic(err)
 	}
-	MapConsts = m
-
-	m2, err := readPokemonConstants()
+	PokeConsts, err = readPokemonConstants()
 	if err != nil {
 		panic(err)
 	}
-	PokeConsts = m2
+	EvoMap, err = readEvoMap()
+	if err != nil {
+		panic(err)
+	}
+	RandomizerPools, err = readRandomizerPools()
+	if err != nil {
+		panic(err)
+	}
 }
 
 func readPokemonConstants() (map[int]string, error) {
@@ -76,4 +86,24 @@ func readMapConstants() (map[int]map[int]string, error) {
 		}
 	}
 	return m, nil
+}
+
+func readEvoMap() (map[string]map[string]int, error) {
+	d, err := os.ReadFile("ref/evopool.yaml")
+	if err != nil {
+		return nil, err
+	}
+	m := map[string]map[string]int{}
+	err = yaml.Unmarshal(d, &m)
+	return m, err
+}
+
+func readRandomizerPools() (map[string][]string, error) {
+	d, err := os.ReadFile("ref/ck+randomizer_pools.yaml")
+	if err != nil {
+		return nil, err
+	}
+	m := map[string][]string{}
+	err = yaml.Unmarshal(d, &m)
+	return m, err
 }

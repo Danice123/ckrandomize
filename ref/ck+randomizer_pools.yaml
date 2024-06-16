@@ -1,0 +1,133 @@
+bugs:
+  - WEEDLE
+  - CATERPIE
+  - SPINARAK
+  - LEDYBA
+  - VENONAT
+  - YANMA
+  - EKANS
+  - KOFFING
+  - GRIMER
+strong-bugs:
+  - HERACROSS
+  - PINECO
+  - SCYTHER
+  - PINSIR
+grasses:
+  - ODDISH
+  - PARAS
+  - BELLSPROUT
+  - HOPPIP
+  - SUNKERN
+  - EXEGGCUTE
+  - CHIKORITA
+  - BULBASAUR
+slow-normals:
+  - CLEFFA
+  - IGGLYBUFF
+  - SNUBBULL
+  - TEDDIURSA
+  - LICKITUNG
+  - DUNSPARCE
+fast-normals:
+  - RATTATA
+  - MEOWTH
+  - SENTRET
+  - GIRAFARIG
+  - STANTLER
+  - AIPOM
+birds:
+  - PIDGEY
+  - SPEAROW
+  - FARFETCH_D
+  - DODUO
+  - HOOTHOOT
+  - NATU
+  - MURKROW
+  - DELIBIRD
+electrics:
+  - MAREEP
+  - PICHU
+  - VOLTORB
+  - MAGNEMITE
+  - ELEKID
+terrestrial-waters:
+  - POLIWAG
+  - PSYDUCK
+  - MARILL
+  - SLOWPOKE
+  - WOOPER
+  - TOTODILE
+  - SQUIRTLE
+  - KRABBY
+ocean-waters:
+  - TENTACOOL
+  - SEEL
+  - SHELLDER
+  - HORSEA
+  - GOLDEEN
+  - STARYU
+  - CHINCHOU
+  - QWILFISH
+  - REMORAID
+  - MANTINE
+fires:
+  - VULPIX
+  - GROWLITHE
+  - PONYTA
+  - MAGBY
+  - HOUNDOUR
+  - CYNDAQUIL
+  - CHARMANDER
+fightings:
+  - MACHOP
+  - MANKEY
+  - TYROGUE
+rocks:
+  - GEODUDE
+  - RHYHORN
+  - SLUGMA
+  - OMANYTE
+  - KABUTO
+  - CORSOLA
+  - SHUCKLE
+grounds:
+  - SANDSHREW
+  - NIDORAN_M
+  - NIDORAN_F
+  - DIGLETT
+  - CUBONE
+  - SWINUB
+  - PHANPY
+psychics:
+  - SMOOCHUM
+  - DROWZEE
+  - MR__MIME
+  - ABRA
+ghosts:
+  - ZUBAT
+  - GASTLY
+  - SNEASEL
+  - MISDREAVUS
+rares:
+  - ONIX
+  - LARVITAR
+  - GLIGAR
+  - LAPRAS
+  - SKARMORY
+  - CHANSEY
+  - KANGASKHAN
+  - TAUROS
+  - PORYGON
+  - SNORLAX
+  - MILTANK
+  - SMEARGLE
+  - WOBBUFFET
+  - SUDOWOODO
+NORANDOM:
+  - EEVEE
+  - TOGEPI
+  - DRAGONITE
+  - AERODACTYL
+  - DITTO
+  - MAGIKARP

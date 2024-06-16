@@ -1,6 +1,8 @@
 package cmd
 
 import (
+	"encoding/json"
+	"fmt"
 	"os"
 
 	"github.com/Danice123/ckrandomize/data"
@@ -12,6 +14,38 @@ const BEGINNING_OF_JOHTO_WATER_WILDMON_TABLE = 0x2B128
 const BEGINNING_OF_KANTO_GRASS_WILDMON_TABLE = 0x2B27F
 const BEGINNING_OF_KANTO_WATER_WILDMON_TABLE = 0x2B802
 
+type RomData struct {
+	johtoGrass []data.GrassWildmonTable
+	johtoWater []data.WaterWildmonTable
+	kantoGrass []data.GrassWildmonTable
+	kantoWater []data.WaterWildmonTable
+}
+
+func (data *RomData) ReadRom(filepath string) error {
+	rom, err := os.OpenFile(filepath, os.O_RDONLY, 0777)
+	if err != nil {
+		return err
+	}
+
+	data.johtoGrass, err = ReadGrassWM(rom, BEGINNING_OF_JOHTO_GRASS_WILDMON_TABLE)
+	if err != nil {
+		return err
+	}
+	data.johtoWater, err = ReadWaterWM(rom, BEGINNING_OF_JOHTO_WATER_WILDMON_TABLE)
+	if err != nil {
+		return err
+	}
+	data.kantoGrass, err = ReadGrassWM(rom, BEGINNING_OF_KANTO_GRASS_WILDMON_TABLE)
+	if err != nil {
+		return err
+	}
+	data.kantoWater, err = ReadWaterWM(rom, BEGINNING_OF_KANTO_WATER_WILDMON_TABLE)
+	if err != nil {
+		return err
+	}
+	return rom.Close()
+}
+
 func init() {
 	rootCmd.AddCommand(readCmd)
 }
@@ -19,53 +53,73 @@ func init() {
 var readCmd = &cobra.Command{
 	Use:   "read [target] [output]",
 	Short: "READ",
-	Args:  cobra.ExactArgs(2),
+	Args:  cobra.MinimumNArgs(1),
 	RunE: func(cmd *cobra.Command, args []string) error {
-		f, err := os.ReadFile(args[0])
-		if err != nil {
-			return err
-		}
-		err = os.WriteFile(args[1], f, 0777)
-		if err != nil {
-			return err
-		}
-
-		rom, err := os.OpenFile(args[1], os.O_RDWR, 0777)
+		rom := RomData{}
+		err := rom.ReadRom(args[0])
 		if err != nil {
 			return err
 		}
 
-		_, err = ReadGrassWM(rom, BEGINNING_OF_JOHTO_GRASS_WILDMON_TABLE)
+		emi, err := data.ReadEmiEncounterList()
 		if err != nil {
 			return err
 		}
 
-		_, err = ReadWaterWM(rom, BEGINNING_OF_JOHTO_WATER_WILDMON_TABLE)
+		randomizer := data.Randomizer{}
+		for i := range rom.johtoGrass {
+			rom.johtoGrass[i] = randomizer.Randomize(rom.johtoGrass[i]).(data.GrassWildmonTable)
+			emi.Translate(rom.johtoGrass[i])
+		}
+		for i := range rom.johtoWater {
+			rom.johtoWater[i] = randomizer.Randomize(rom.johtoWater[i]).(data.WaterWildmonTable)
+			emi.Translate(rom.johtoWater[i])
+		}
+		for i := range rom.kantoGrass {
+			rom.kantoGrass[i] = randomizer.Randomize(rom.kantoGrass[i]).(data.GrassWildmonTable)
+			emi.Translate(rom.kantoGrass[i])
+		}
+		for i := range rom.kantoWater {
+			rom.kantoWater[i] = randomizer.Randomize(rom.kantoWater[i]).(data.WaterWildmonTable)
+			emi.Translate(rom.kantoWater[i])
+		}
+
+		emiout, err := json.MarshalIndent(emi, "", "\t")
+		if err != nil {
+			return err
+		}
+		err = os.WriteFile("emiout.json", emiout, 0777)
 		if err != nil {
 			return err
 		}
 
-		_, err = ReadGrassWM(rom, BEGINNING_OF_KANTO_GRASS_WILDMON_TABLE)
-		if err != nil {
-			return err
+		if len(args) > 1 {
+			f, err := os.ReadFile(args[0])
+			if err != nil {
+				return err
+			}
+
+			err = os.WriteFile(args[1], f, 0777)
+			if err != nil {
+				return err
+			}
+
+			wrrom, err := os.OpenFile(args[1], os.O_RDWR, 0777)
+			if err != nil {
+				return err
+			}
+
+			_, err = wrrom.Seek(BEGINNING_OF_JOHTO_GRASS_WILDMON_TABLE, 0)
+			if err != nil {
+				return err
+			}
+			for _, wm := range rom.johtoGrass {
+				_, err = wrrom.Write(wm[:])
+				if err != nil {
+					return err
+				}
+			}
 		}
-
-		_, err = ReadWaterWM(rom, BEGINNING_OF_KANTO_WATER_WILDMON_TABLE)
-		if err != nil {
-			return err
-		}
-
-		// _, err = rom.Seek(BEGINNING_OF_JOHTO_GRASS_WILDMON_TABLE, 0)
-		// if err != nil {
-		// 	return err
-		// }
-		// for _, wm := range johtoGrass {
-		// 	_, err = rom.Write(wm[:])
-		// 	if err != nil {
-		// 		return err
-		// 	}
-		// }
-
 		return nil
 	},
 }
@@ -114,4 +168,11 @@ func ReadWaterWM(rom *os.File, offset int64) ([]data.WaterWildmonTable, error) {
 		// fmt.Printf("%s:%v\n", wm.Map(), wm.Table())
 	}
 	return wildmons, nil
+}
+
+func PrintTable(t []data.Wildmon) {
+	for _, wm := range t {
+		fmt.Printf(" %s,%d\t|", wm.Name, wm.Level)
+	}
+	fmt.Println("")
 }
