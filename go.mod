@@ -1,3 +1,10 @@
-module github.com/danice123/ckrandomize
+module github.com/Danice123/ckrandomize
 
 go 1.21.5
+
+require github.com/spf13/cobra v1.8.1
+
+require (
+	github.com/inconshreveable/mousetrap v1.1.0 // indirect
+	github.com/spf13/pflag v1.0.5 // indirect
+)
