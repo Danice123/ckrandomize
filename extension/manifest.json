@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "CK+ Randomizer Emicalc Plugin",
+    "description": "Loads encounters from a randomized run into Emi Calc",
+    "version": "1.0",
+    "action": {
+      "default_popup": "tool.html"
+    },
+    "host_permissions": ["https://emi.dev/ck+/"],
+    "permissions": ["scripting"]
+  }
