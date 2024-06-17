@@ -141,14 +141,17 @@ var readCmd = &cobra.Command{
 		}
 
 		if len(args) > 1 {
-			f, err := os.ReadFile(args[0])
-			if err != nil {
-				return err
-			}
+			// COPY FILE
+			{
+				f, err := os.ReadFile(args[0])
+				if err != nil {
+					return err
+				}
 
-			err = os.WriteFile(args[1], f, 0777)
-			if err != nil {
-				return err
+				err = os.WriteFile(args[1], f, 0777)
+				if err != nil {
+					return err
+				}
 			}
 
 			wrrom, err := os.OpenFile(args[1], os.O_RDWR, 0777)
@@ -156,16 +159,121 @@ var readCmd = &cobra.Command{
 				return err
 			}
 
-			_, err = wrrom.Seek(BEGINNING_OF_JOHTO_GRASS_WILDMON_TABLE, 0)
-			if err != nil {
-				return err
-			}
-			for _, wm := range rom.johtoGrass {
-				_, err = wrrom.Write(wm[:])
+			// JOHTO GRASS
+			{
+				_, err = wrrom.Seek(BEGINNING_OF_JOHTO_GRASS_WILDMON_TABLE, 0)
 				if err != nil {
 					return err
 				}
+				for _, wm := range rom.johtoGrass {
+					_, err = wrrom.Write(wm[:])
+					if err != nil {
+						return err
+					}
+				}
 			}
+
+			// JOHTO WATER
+			{
+				_, err = wrrom.Seek(BEGINNING_OF_JOHTO_WATER_WILDMON_TABLE, 0)
+				if err != nil {
+					return err
+				}
+				for _, wm := range rom.johtoWater {
+					_, err = wrrom.Write(wm[:])
+					if err != nil {
+						return err
+					}
+				}
+			}
+
+			// KANTO GRASS
+			{
+				_, err = wrrom.Seek(BEGINNING_OF_KANTO_GRASS_WILDMON_TABLE, 0)
+				if err != nil {
+					return err
+				}
+				for _, wm := range rom.kantoGrass {
+					_, err = wrrom.Write(wm[:])
+					if err != nil {
+						return err
+					}
+				}
+			}
+
+			// KANTO WATER
+			{
+				_, err = wrrom.Seek(BEGINNING_OF_KANTO_WATER_WILDMON_TABLE, 0)
+				if err != nil {
+					return err
+				}
+				for _, wm := range rom.kantoWater {
+					_, err = wrrom.Write(wm[:])
+					if err != nil {
+						return err
+					}
+				}
+			}
+
+			// TREEMON
+			{
+				_, err = wrrom.Seek(BEGINNING_OF_TREEMON_TABLE, 0)
+				if err != nil {
+					return err
+				}
+				for _, wm := range rom.treemon {
+					_, err = wrrom.Write(wm[:])
+					if err != nil {
+						return err
+					}
+				}
+			}
+
+			// FISHING
+			{
+				_, err = wrrom.Seek(BEGINNING_OF_FISHING_TABLE, 0)
+				if err != nil {
+					return err
+				}
+				for _, wm := range rom.fishing.Tables {
+					_, err = wrrom.Write(wm[:])
+					if err != nil {
+						return err
+					}
+				}
+				for _, wm := range rom.fishing.Timegroups {
+					_, err = wrrom.Write(wm[:])
+					if err != nil {
+						return err
+					}
+				}
+			}
+
+			// STARTER
+			{
+				chikMon := rom.gifts[0].Data[0:1]
+				for _, offset := range []int64{CHIKORITA_DEF, CHIKORITA_CRY, CHIKORITA_PIC, CHIKORITA_NAME} {
+					_, err := wrrom.WriteAt(chikMon, offset)
+					if err != nil {
+						return err
+					}
+				}
+				totaMon := rom.gifts[0].Data[1:2]
+				for _, offset := range []int64{TOTADILE_DEF, TOTADILE_CRY, TOTADILE_PIC, TOTADILE_NAME} {
+					_, err := wrrom.WriteAt(totaMon, offset)
+					if err != nil {
+						return err
+					}
+				}
+				cyndMon := rom.gifts[0].Data[2:3]
+				for _, offset := range []int64{CYNDAQUIL_DEF, CYNDAQUIL_CRY, CYNDAQUIL_PIC, CYNDAQUIL_NAME} {
+					_, err := wrrom.WriteAt(cyndMon, offset)
+					if err != nil {
+						return err
+					}
+				}
+			}
+			return wrrom.Close()
 		}
 		return nil
 	},
