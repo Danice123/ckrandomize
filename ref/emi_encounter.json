@@ -1,4 +1,1938 @@
 {
+    "encounter_pools": {
+        "fishing": {
+            "dratini": {
+                "good": {
+                    "day": [
+                        {
+                            "chance": 35,
+                            "level": 63,
+                            "pokemon": "dragonair"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 63,
+                            "pokemon": "dragonair"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 63,
+                            "pokemon": "seadra"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 63,
+                            "pokemon": "dragonair"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 35,
+                            "level": 63,
+                            "pokemon": "dragonair"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 63,
+                            "pokemon": "dragonair"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 63,
+                            "pokemon": "seadra"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 63,
+                            "pokemon": "seadra"
+                        }
+                    ]
+                },
+                "old": {
+                    "day": [
+                        {
+                            "chance": 70,
+                            "level": 5,
+                            "pokemon": "dratini"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 5,
+                            "pokemon": "seadra"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 5,
+                            "pokemon": "dragonair"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 70,
+                            "level": 5,
+                            "pokemon": "dratini"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 5,
+                            "pokemon": "seadra"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 5,
+                            "pokemon": "dragonair"
+                        }
+                    ]
+                },
+                "super": {
+                    "day": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "kingdra"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "kingdra"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "kingdra"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "dragonite"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "kingdra"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "dragonite"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "kingdra"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "dragonite"
+                        }
+                    ]
+                }
+            },
+            "dratini-2": {
+                "good": {
+                    "day": [
+                        {
+                            "chance": 35,
+                            "level": 62,
+                            "pokemon": "omastar"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 62,
+                            "pokemon": "lanturn"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 62,
+                            "pokemon": "quagsire"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 62,
+                            "pokemon": "quagsire"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 35,
+                            "level": 62,
+                            "pokemon": "omastar"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 62,
+                            "pokemon": "lanturn"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 62,
+                            "pokemon": "quagsire"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 62,
+                            "pokemon": "shellder"
+                        }
+                    ]
+                },
+                "old": {
+                    "day": [
+                        {
+                            "chance": 70,
+                            "level": 60,
+                            "pokemon": "poliwhirl"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 60,
+                            "pokemon": "politoed"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 60,
+                            "pokemon": "dewgong"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 70,
+                            "level": 60,
+                            "pokemon": "poliwhirl"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 60,
+                            "pokemon": "politoed"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 60,
+                            "pokemon": "dewgong"
+                        }
+                    ]
+                },
+                "super": {
+                    "day": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "dragonair"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "dragonair"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "dragonair"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "dragonair"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "dragonair"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "dragonair"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "dragonair"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "dragonair"
+                        }
+                    ]
+                }
+            },
+            "gyarados": {
+                "good": {
+                    "day": [
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "gyarados"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "gyarados"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 38,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 38,
+                            "pokemon": "gyarados"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "gyarados"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "gyarados"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 38,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 38,
+                            "pokemon": "gyarados"
+                        }
+                    ]
+                },
+                "old": {
+                    "day": [
+                        {
+                            "chance": 70,
+                            "level": 5,
+                            "pokemon": "gyarados"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 15,
+                            "pokemon": "gyarados"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 25,
+                            "pokemon": "magikarp"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 70,
+                            "level": 5,
+                            "pokemon": "gyarados"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 15,
+                            "pokemon": "gyarados"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 25,
+                            "pokemon": "magikarp"
+                        }
+                    ]
+                },
+                "super": {
+                    "day": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "magikarp"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "magikarp"
+                        }
+                    ]
+                }
+            },
+            "lake": {
+                "good": {
+                    "day": [
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "kabutops"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "slowbro"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 38,
+                            "pokemon": "omastar"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 38,
+                            "pokemon": "omastar"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "kabutops"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "slowbro"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 38,
+                            "pokemon": "omastar"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 38,
+                            "pokemon": "seaking"
+                        }
+                    ]
+                },
+                "old": {
+                    "day": [
+                        {
+                            "chance": 70,
+                            "level": 14,
+                            "pokemon": "kabuto"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "omanyte"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "slowpoke"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 70,
+                            "level": 14,
+                            "pokemon": "kabuto"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "omanyte"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "slowpoke"
+                        }
+                    ]
+                },
+                "super": {
+                    "day": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "slowbro"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "quagsire"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "kabutops"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "seaking"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "slowbro"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "qwilfish"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "kabutops"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "seaking"
+                        }
+                    ]
+                }
+            },
+            "ocean": {
+                "good": {
+                    "day": [
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "corsola"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "chinchou"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 38,
+                            "pokemon": "tentacool"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 38,
+                            "pokemon": "corsola"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "corsola"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "chinchou"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 38,
+                            "pokemon": "tentacool"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 38,
+                            "pokemon": "shellder"
+                        }
+                    ]
+                },
+                "old": {
+                    "day": [
+                        {
+                            "chance": 70,
+                            "level": 14,
+                            "pokemon": "tentacool"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "chinchou"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "staryu"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 70,
+                            "level": 14,
+                            "pokemon": "tentacool"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "chinchou"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "staryu"
+                        }
+                    ]
+                },
+                "super": {
+                    "day": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "mantine"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "staryu"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "tentacruel"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "staryu"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "mantine"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "shellder"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "tentacruel"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "staryu"
+                        }
+                    ]
+                }
+            },
+            "pond": {
+                "good": {
+                    "day": [
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "poliwhirl"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "slowpoke"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 38,
+                            "pokemon": "poliwhirl"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 38,
+                            "pokemon": "wooper"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "poliwhirl"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "slowpoke"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 38,
+                            "pokemon": "poliwhirl"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 38,
+                            "pokemon": "slowpoke"
+                        }
+                    ]
+                },
+                "old": {
+                    "day": [
+                        {
+                            "chance": 70,
+                            "level": 14,
+                            "pokemon": "remoraid"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "remoraid"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "seel"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 70,
+                            "level": 14,
+                            "pokemon": "remoraid"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "remoraid"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "seel"
+                        }
+                    ]
+                },
+                "super": {
+                    "day": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "poliwhirl"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "politoed"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "azumarill"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "quagsire"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "poliwhirl"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "poliwrath"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "azumarill"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "quagsire"
+                        }
+                    ]
+                }
+            },
+            "qwilfish": {
+                "good": {
+                    "day": [
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "poliwhirl"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "slowpoke"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 38,
+                            "pokemon": "tentacool"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 38,
+                            "pokemon": "chinchou"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "poliwhirl"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "slowpoke"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 38,
+                            "pokemon": "tentacool"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 38,
+                            "pokemon": "wooper"
+                        }
+                    ]
+                },
+                "old": {
+                    "day": [
+                        {
+                            "chance": 70,
+                            "level": 14,
+                            "pokemon": "tentacool"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "chinchou"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "staryu"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 70,
+                            "level": 14,
+                            "pokemon": "tentacool"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "chinchou"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "staryu"
+                        }
+                    ]
+                },
+                "super": {
+                    "day": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "staryu"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "tentacruel"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "lanturn"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "mantine"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "staryu"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "qwilfish"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "lanturn"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "mantine"
+                        }
+                    ]
+                }
+            },
+            "qwilfish-noswarm": {
+                "good": {
+                    "day": [
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "poliwhirl"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "slowpoke"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 38,
+                            "pokemon": "tentacool"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 38,
+                            "pokemon": "chinchou"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "poliwhirl"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "slowpoke"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 38,
+                            "pokemon": "tentacool"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 38,
+                            "pokemon": "wooper"
+                        }
+                    ]
+                },
+                "old": {
+                    "day": [
+                        {
+                            "chance": 70,
+                            "level": 14,
+                            "pokemon": "tentacool"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "chinchou"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "staryu"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 70,
+                            "level": 14,
+                            "pokemon": "tentacool"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "chinchou"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "staryu"
+                        }
+                    ]
+                },
+                "super": {
+                    "day": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "staryu"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "tentacruel"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "lanturn"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "mantine"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "staryu"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "qwilfish"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "lanturn"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "mantine"
+                        }
+                    ]
+                }
+            },
+            "qwilfish-swarm": {
+                "good": {
+                    "day": [
+                        {
+                            "chance": 35,
+                            "level": 20,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 20,
+                            "pokemon": "qwilfish"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 20,
+                            "pokemon": "qwilfish"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 20,
+                            "pokemon": "qwilfish"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 35,
+                            "level": 20,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 20,
+                            "pokemon": "qwilfish"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 20,
+                            "pokemon": "qwilfish"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 20,
+                            "pokemon": "qwilfish"
+                        }
+                    ]
+                },
+                "old": {
+                    "day": [
+                        {
+                            "chance": 70,
+                            "level": 5,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 5,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 5,
+                            "pokemon": "qwilfish"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 70,
+                            "level": 5,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 5,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 5,
+                            "pokemon": "qwilfish"
+                        }
+                    ]
+                },
+                "super": {
+                    "day": [
+                        {
+                            "chance": 40,
+                            "level": 40,
+                            "pokemon": "qwilfish"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 40,
+                            "pokemon": "qwilfish"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 40,
+                            "pokemon": "qwilfish"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 40,
+                            "pokemon": "qwilfish"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 40,
+                            "level": 40,
+                            "pokemon": "qwilfish"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 40,
+                            "pokemon": "qwilfish"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 40,
+                            "pokemon": "qwilfish"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 40,
+                            "pokemon": "qwilfish"
+                        }
+                    ]
+                }
+            },
+            "remoraid": {
+                "good": {
+                    "day": [
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "poliwag"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 38,
+                            "pokemon": "poliwag"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 38,
+                            "pokemon": "poliwag"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "poliwag"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 38,
+                            "pokemon": "poliwag"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 38,
+                            "pokemon": "poliwag"
+                        }
+                    ]
+                },
+                "old": {
+                    "day": [
+                        {
+                            "chance": 70,
+                            "level": 14,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "poliwag"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 70,
+                            "level": 14,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "poliwag"
+                        }
+                    ]
+                },
+                "super": {
+                    "day": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "poliwhirl"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "poliwhirl"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "gyarados"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "remoraid"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "poliwhirl"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "poliwhirl"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "gyarados"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "remoraid"
+                        }
+                    ]
+                }
+            },
+            "remoraid-swarm": {
+                "good": {
+                    "day": [
+                        {
+                            "chance": 35,
+                            "level": 20,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 20,
+                            "pokemon": "remoraid"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 20,
+                            "pokemon": "remoraid"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 20,
+                            "pokemon": "remoraid"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 35,
+                            "level": 20,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 20,
+                            "pokemon": "remoraid"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 20,
+                            "pokemon": "remoraid"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 20,
+                            "pokemon": "remoraid"
+                        }
+                    ]
+                },
+                "old": {
+                    "day": [
+                        {
+                            "chance": 70,
+                            "level": 10,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 10,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 10,
+                            "pokemon": "remoraid"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 70,
+                            "level": 10,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 10,
+                            "pokemon": "magikarp"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 10,
+                            "pokemon": "remoraid"
+                        }
+                    ]
+                },
+                "super": {
+                    "day": [
+                        {
+                            "chance": 40,
+                            "level": 40,
+                            "pokemon": "remoraid"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 40,
+                            "pokemon": "remoraid"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 40,
+                            "pokemon": "remoraid"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 40,
+                            "pokemon": "remoraid"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 40,
+                            "level": 40,
+                            "pokemon": "remoraid"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 40,
+                            "pokemon": "remoraid"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 40,
+                            "pokemon": "remoraid"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 40,
+                            "pokemon": "remoraid"
+                        }
+                    ]
+                }
+            },
+            "shore": {
+                "good": {
+                    "day": [
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "kingler"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "seaking"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 38,
+                            "pokemon": "mantine"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 38,
+                            "pokemon": "corsola"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "kingler"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 38,
+                            "pokemon": "seaking"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 38,
+                            "pokemon": "mantine"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 38,
+                            "pokemon": "staryu"
+                        }
+                    ]
+                },
+                "old": {
+                    "day": [
+                        {
+                            "chance": 70,
+                            "level": 14,
+                            "pokemon": "krabby"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "corsola"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "seel"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 70,
+                            "level": 14,
+                            "pokemon": "krabby"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "corsola"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 14,
+                            "pokemon": "goldeen"
+                        }
+                    ]
+                },
+                "super": {
+                    "day": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "qwilfish"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "corsola"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "octillery"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "golduck"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "qwilfish"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "staryu"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "octillery"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "golduck"
+                        }
+                    ]
+                }
+            },
+            "whirlislands": {
+                "good": {
+                    "day": [
+                        {
+                            "chance": 35,
+                            "level": 50,
+                            "pokemon": "seadra"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 50,
+                            "pokemon": "dewgong"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 50,
+                            "pokemon": "seadra"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 50,
+                            "pokemon": "horsea"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 35,
+                            "level": 50,
+                            "pokemon": "seadra"
+                        },
+                        {
+                            "chance": 35,
+                            "level": 50,
+                            "pokemon": "dewgong"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 50,
+                            "pokemon": "seadra"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 50,
+                            "pokemon": "shellder"
+                        }
+                    ]
+                },
+                "old": {
+                    "day": [
+                        {
+                            "chance": 70,
+                            "level": 50,
+                            "pokemon": "dewgong"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 50,
+                            "pokemon": "seadra"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 50,
+                            "pokemon": "seadra"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 70,
+                            "level": 50,
+                            "pokemon": "dewgong"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 50,
+                            "pokemon": "seadra"
+                        },
+                        {
+                            "chance": 15,
+                            "level": 50,
+                            "pokemon": "seadra"
+                        }
+                    ]
+                },
+                "super": {
+                    "day": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "seadra"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "cloyster"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "slowbro"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "kingdra"
+                        }
+                    ],
+                    "night": [
+                        {
+                            "chance": 40,
+                            "level": 65,
+                            "pokemon": "seadra"
+                        },
+                        {
+                            "chance": 30,
+                            "level": 65,
+                            "pokemon": "cloyster"
+                        },
+                        {
+                            "chance": 20,
+                            "level": 65,
+                            "pokemon": "slowbro"
+                        },
+                        {
+                            "chance": 10,
+                            "level": 65,
+                            "pokemon": "kingdra"
+                        }
+                    ]
+                }
+            }
+        },
+        "headbutt": {
+            "canyon": [
+                {
+                    "chance": 50,
+                    "level": 10,
+                    "pokemon": "hoothoot"
+                },
+                {
+                    "chance": 15,
+                    "level": 10,
+                    "pokemon": "spinarak"
+                },
+                {
+                    "chance": 15,
+                    "level": 10,
+                    "pokemon": "spinarak"
+                },
+                {
+                    "chance": 10,
+                    "level": 10,
+                    "pokemon": "doduo"
+                },
+                {
+                    "chance": 5,
+                    "level": 10,
+                    "pokemon": "exeggcute"
+                },
+                {
+                    "chance": 5,
+                    "level": 10,
+                    "pokemon": "exeggcute"
+                }
+            ],
+            "city": [
+                {
+                    "chance": 50,
+                    "level": 10,
+                    "pokemon": "spearow"
+                },
+                {
+                    "chance": 15,
+                    "level": 10,
+                    "pokemon": "ledyba"
+                },
+                {
+                    "chance": 15,
+                    "level": 10,
+                    "pokemon": "ekans"
+                },
+                {
+                    "chance": 10,
+                    "level": 10,
+                    "pokemon": "beedrill"
+                },
+                {
+                    "chance": 5,
+                    "level": 10,
+                    "pokemon": "aipom"
+                },
+                {
+                    "chance": 5,
+                    "level": 10,
+                    "pokemon": "heracross"
+                }
+            ],
+            "forest": [
+                {
+                    "chance": 50,
+                    "level": 10,
+                    "pokemon": "spearow"
+                },
+                {
+                    "chance": 15,
+                    "level": 10,
+                    "pokemon": "ledyba"
+                },
+                {
+                    "chance": 15,
+                    "level": 10,
+                    "pokemon": "ekans"
+                },
+                {
+                    "chance": 10,
+                    "level": 10,
+                    "pokemon": "beedrill"
+                },
+                {
+                    "chance": 5,
+                    "level": 10,
+                    "pokemon": "aipom"
+                },
+                {
+                    "chance": 5,
+                    "level": 10,
+                    "pokemon": "heracross"
+                }
+            ],
+            "kanto": [
+                {
+                    "chance": 50,
+                    "level": 10,
+                    "pokemon": "spearow"
+                },
+                {
+                    "chance": 15,
+                    "level": 10,
+                    "pokemon": "ledyba"
+                },
+                {
+                    "chance": 15,
+                    "level": 10,
+                    "pokemon": "ekans"
+                },
+                {
+                    "chance": 10,
+                    "level": 10,
+                    "pokemon": "beedrill"
+                },
+                {
+                    "chance": 5,
+                    "level": 10,
+                    "pokemon": "aipom"
+                },
+                {
+                    "chance": 5,
+                    "level": 10,
+                    "pokemon": "heracross"
+                }
+            ],
+            "lake": [
+                {
+                    "chance": 50,
+                    "level": 10,
+                    "pokemon": "spearow"
+                },
+                {
+                    "chance": 15,
+                    "level": 10,
+                    "pokemon": "ledyba"
+                },
+                {
+                    "chance": 15,
+                    "level": 10,
+                    "pokemon": "ekans"
+                },
+                {
+                    "chance": 10,
+                    "level": 10,
+                    "pokemon": "beedrill"
+                },
+                {
+                    "chance": 5,
+                    "level": 10,
+                    "pokemon": "aipom"
+                },
+                {
+                    "chance": 5,
+                    "level": 10,
+                    "pokemon": "heracross"
+                }
+            ],
+            "route": [
+                {
+                    "chance": 50,
+                    "level": 10,
+                    "pokemon": "hoothoot"
+                },
+                {
+                    "chance": 15,
+                    "level": 10,
+                    "pokemon": "spinarak"
+                },
+                {
+                    "chance": 15,
+                    "level": 10,
+                    "pokemon": "spinarak"
+                },
+                {
+                    "chance": 10,
+                    "level": 10,
+                    "pokemon": "doduo"
+                },
+                {
+                    "chance": 5,
+                    "level": 10,
+                    "pokemon": "exeggcute"
+                },
+                {
+                    "chance": 5,
+                    "level": 10,
+                    "pokemon": "pineco"
+                }
+            ],
+            "town": [
+                {
+                    "chance": 50,
+                    "level": 10,
+                    "pokemon": "spearow"
+                },
+                {
+                    "chance": 15,
+                    "level": 10,
+                    "pokemon": "ledyba"
+                },
+                {
+                    "chance": 15,
+                    "level": 10,
+                    "pokemon": "ekans"
+                },
+                {
+                    "chance": 10,
+                    "level": 10,
+                    "pokemon": "beedrill"
+                },
+                {
+                    "chance": 5,
+                    "level": 10,
+                    "pokemon": "aipom"
+                },
+                {
+                    "chance": 5,
+                    "level": 10,
+                    "pokemon": "heracross"
+                }
+            ]
+        },
+        "rock": {
+            "rock": [
+                {
+                    "chance": 90,
+                    "level": 15,
+                    "pokemon": "krabby"
+                },
+                {
+                    "chance": 10,
+                    "level": 15,
+                    "pokemon": "shuckle"
+                }
+            ]
+        }
+    },
     "encounters": [
         {
             "area": "sprout-tower-2f",

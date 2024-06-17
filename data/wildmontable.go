@@ -2,11 +2,12 @@ package data
 
 import "fmt"
 
-const GRASS_WILDMON_HEADER_LENGTH = 5
-const GRASS_WILDMON_TIME_TABLE_LENGTH = 14
 const MORNING = 0
 const DAY = 1
 const NIGHT = 2
+
+const GRASS_WILDMON_HEADER_LENGTH = 5
+const GRASS_WILDMON_TIME_TABLE_LENGTH = 14
 
 type GrassWildmonTable [GRASS_WILDMON_HEADER_LENGTH + GRASS_WILDMON_TIME_TABLE_LENGTH*3]byte
 
@@ -30,6 +31,7 @@ func (ths GrassWildmonTable) GetTable(i int) []Wildmon {
 		return nil
 	}
 }
+
 func (ths GrassWildmonTable) LenTables() int {
 	return 3
 }
@@ -64,15 +66,11 @@ func (ths WaterWildmonTable) Type() string {
 	return "surfing"
 }
 
-func (ths WaterWildmonTable) GetTable(i int) []Wildmon {
-	return ths.Table()
+func (ths WaterWildmonTable) GetTable(_ int) []Wildmon {
+	return readWildmonTable(ths[:], 3, WATER_WILDMON_HEADER_LENGTH)
 }
 func (ths WaterWildmonTable) LenTables() int {
 	return 1
-}
-
-func (ths WaterWildmonTable) Table() []Wildmon {
-	return readWildmonTable(ths[:], 3, WATER_WILDMON_HEADER_LENGTH)
 }
 
 func (ths WaterWildmonTable) ModifyTable(pokemon int, _ int, index int) Tables {

@@ -89,7 +89,7 @@ func EvolveMon(name string, level int) string {
 	evo := name
 	if EvoMap[name] != nil && len(EvoMap[name]) > 0 {
 		for n, l := range EvoMap[name] {
-			if l < level {
+			if l <= level {
 				if l > minEvo {
 					minEvo = l
 					evo = n
