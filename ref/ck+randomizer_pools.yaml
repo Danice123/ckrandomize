@@ -10,9 +10,9 @@ bugs:
   - GRIMER
 strong-bugs:
   - HERACROSS
-  - PINECO
   - SCYTHER
   - PINSIR
+  - SHUCKLE
 grasses:
   - ODDISH
   - PARAS
@@ -87,10 +87,14 @@ rocks:
   - GEODUDE
   - RHYHORN
   - SLUGMA
+  - SUDOWOODO
+  - PINECO
+  - LARVITAR
+  - ONIX
+fossils:
   - OMANYTE
   - KABUTO
   - CORSOLA
-  - SHUCKLE
 grounds:
   - SANDSHREW
   - NIDORAN_M
@@ -110,8 +114,6 @@ ghosts:
   - SNEASEL
   - MISDREAVUS
 rares:
-  - ONIX
-  - LARVITAR
   - GLIGAR
   - LAPRAS
   - SKARMORY
@@ -123,7 +125,6 @@ rares:
   - MILTANK
   - SMEARGLE
   - WOBBUFFET
-  - SUDOWOODO
 NORANDOM:
   - EEVEE
   - TOGEPI
