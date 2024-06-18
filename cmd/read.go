@@ -2,8 +2,10 @@ package cmd
 
 import (
 	"encoding/json"
+	"errors"
 	"fmt"
 	"os"
+	"strings"
 
 	"github.com/Danice123/ckrandomize/data"
 	"github.com/spf13/cobra"
@@ -131,16 +133,10 @@ var readCmd = &cobra.Command{
 		}
 		emi.TranslateFishing(rom.fishing)
 
-		emiout, err := json.MarshalIndent(emi, "", "\t")
-		if err != nil {
-			return err
-		}
-		err = os.WriteFile("emiout.json", emiout, 0777)
-		if err != nil {
-			return err
-		}
-
 		if len(args) > 1 {
+			if !strings.HasSuffix(args[0], ".gbc") {
+				return errors.New("please specify a .gbc file to output")
+			}
 			// COPY FILE
 			{
 				f, err := os.ReadFile(args[0])
@@ -152,6 +148,16 @@ var readCmd = &cobra.Command{
 				if err != nil {
 					return err
 				}
+			}
+
+			emiout, err := json.MarshalIndent(emi, "", "\t")
+			if err != nil {
+				return err
+			}
+
+			err = os.WriteFile(strings.ReplaceAll(args[1], ".gbc", ".json"), emiout, 0777)
+			if err != nil {
+				return err
 			}
 
 			wrrom, err := os.OpenFile(args[1], os.O_RDWR, 0777)
