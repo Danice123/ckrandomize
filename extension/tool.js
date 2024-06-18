@@ -16,6 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 window['data'].encounters = j.encounters
                 window['data'].encounter_pools = j.encounter_pools
                 window['encounterPools'] = j.encounter_pools
+
+                pokemonEncounters.clear()
+                for (let i in j.encounters) {
+                  addPoolInfo(j.encounters[i])
+                }
             },
             args: [j],
             world: 'MAIN',
