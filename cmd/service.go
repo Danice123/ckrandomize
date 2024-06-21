@@ -70,7 +70,9 @@ func Home(w http.ResponseWriter, req *http.Request, ps httprouter.Params) {
 func Randomize(w http.ResponseWriter, req *http.Request, ps httprouter.Params) {
 	var path string
 	seed := uuid.New()
-	err := exec.Command("./rand.sh", patchDepo, seed.String()).Run()
+	c := exec.Command("./rand.sh", patchDepo, seed.String())
+	c.Stderr = os.Stderr
+	err := c.Run()
 	if err != nil {
 		path = fmt.Sprintf("/?error=%s", err.Error())
 	} else {
