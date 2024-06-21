@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1>Crystal Kaizo+ Randomizer</h1>
+
+      {{ if .error }}
+      <div class="row">
+        <div class="col">
+          <h2>Error: {{ .error }}</h2>
+        </div>
+      </div>
+      {{ end }}
+
+      <div class="row">
+        <div class="col d-grid gap-2">
+          <a class="btn btn-primary" href="/randomize" role="button"
+            >Generate a new run</a
+          >
+          <a class="btn btn-secondary" href="/patches" role="button"
+            >Run repository</a
+          >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-start">
+          <h3>How to use:</h3>
+          <ol>
+            <li>Hit the "Generate new run" button</li>
+            <li>
+              Download the zip file on the next page (you can share this
+              download page url if you'd like to share this run seed)
+            </li>
+            <li>Unzip</li>
+            <li>
+              Apply the ips file to an ALREADY PATCHED CK+ rom
+              <ul>
+                <li>
+                  I'd recommend
+                  <a href="https://www.marcrobledo.com/RomPatcher.js/"
+                    >https://www.marcrobledo.com/RomPatcher.js/</a
+                  >
+                  to patch
+                </li>
+                <li>
+                  This randomizer was compiled for version
+                  md5:9512a4fa13f8398eeded97f9e240d1a0 of CK+
+                </li>
+              </ul>
+            </li>
+            <li>
+              Install the
+              <a
+                href="https://github.com/Danice123/ckrandomize/releases/tag/extension-v1.0"
+                >browser extension</a
+              >
+              to load the json file into Emi calc
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-start">
+          <a href="https://github.com/Danice123/ckrandomize"
+            >https://github.com/Danice123/ckrandomize</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

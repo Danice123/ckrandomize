@@ -8,6 +8,7 @@ import (
 	"strings"
 
 	"github.com/Danice123/ckrandomize/data"
+	"github.com/google/uuid"
 	"github.com/spf13/cobra"
 )
 
@@ -84,14 +85,21 @@ func (data *RomData) ReadRom(filepath string) error {
 }
 
 func init() {
-	rootCmd.AddCommand(readCmd)
+	rootCmd.AddCommand(randomizeCmd)
+	randomizeCmd.Flags().StringVarP(&seed, "seed", "s", "", "Seed to use when randomizing")
 }
 
-var readCmd = &cobra.Command{
-	Use:   "read [target] [output]",
-	Short: "READ",
+var seed string
+
+var randomizeCmd = &cobra.Command{
+	Use:   "randomize [target] [output]",
+	Short: "Randomize CK+ rom",
 	Args:  cobra.MinimumNArgs(1),
 	RunE: func(cmd *cobra.Command, args []string) error {
+		if seed == "" {
+			seed = uuid.New().String()
+		}
+
 		rom := RomData{}
 		err := rom.ReadRom(args[0])
 		if err != nil {
@@ -103,7 +111,10 @@ var readCmd = &cobra.Command{
 			return err
 		}
 
-		randomizer := data.Randomizer{}
+		randomizer, err := data.NewRandomizer(seed)
+		if err != nil {
+			return err
+		}
 		for i := range rom.gifts {
 			rom.gifts[i] = randomizer.Randomize(rom.gifts[i]).(data.GiftTable)
 			emi.Translate(rom.gifts[i])

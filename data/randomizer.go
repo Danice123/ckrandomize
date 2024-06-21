@@ -1,18 +1,35 @@
 package data
 
 import (
+	"crypto/sha1"
+	"encoding/binary"
 	"math/rand"
 	"slices"
 )
 
 type Randomizer struct {
-	occurance map[string]int
+	occurance  map[string]int
+	seededRand *rand.Rand
 }
 
 type Tables interface {
 	GetTable(int) []Wildmon
 	LenTables() int
 	ModifyTable(pokemon int, table int, index int) Tables
+}
+
+func NewRandomizer(seed string) (*Randomizer, error) {
+	hasher := sha1.New()
+	_, err := hasher.Write([]byte(seed))
+	if err != nil {
+		return nil, err
+	}
+	var seedInt uint64 = binary.BigEndian.Uint64(hasher.Sum(nil))
+	return &Randomizer{
+		occurance:  make(map[string]int),
+		seededRand: rand.New(rand.NewSource(int64(seedInt))),
+	}, nil
+
 }
 
 func (ths *Randomizer) Randomize(area Tables) Tables {
@@ -33,7 +50,7 @@ func (ths *Randomizer) Randomize(area Tables) Tables {
 					if _, ok := dupMap[base]; ok {
 						newMon = dupMap[base]
 					} else {
-						newMon = pl[rand.Intn(len(pl))]
+						newMon = pl[ths.seededRand.Intn(len(pl))]
 						dupMap[base] = newMon
 					}
 					area = area.ModifyTable(GetMonId(EvolveMon(newMon, wm.Level)), i, j)
@@ -45,9 +62,6 @@ func (ths *Randomizer) Randomize(area Tables) Tables {
 }
 
 func (ths *Randomizer) RollNewMon(pool []string, original string) string {
-	if ths.occurance == nil {
-		ths.occurance = map[string]int{}
-	}
 	var total int
 	for _, n := range pool {
 		total += ths.occurance[n]
@@ -59,7 +73,7 @@ func (ths *Randomizer) RollNewMon(pool []string, original string) string {
 
 	var newMon string
 	for {
-		newMon = pool[rand.Intn(len(pool))]
+		newMon = pool[ths.seededRand.Intn(len(pool))]
 		if ths.occurance[newMon] > average {
 			continue
 		}
